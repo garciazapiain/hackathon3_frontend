@@ -1,3 +1,3 @@
 export default {
-    base_url: 'http://www.daydreamcinema.local'
+    base_url: 'http://www.hackathon.test:8080'
 }
