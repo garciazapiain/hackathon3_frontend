@@ -3,16 +3,18 @@ import React from 'react';
 export default function NowPlaying(props) {
     return (
         <>
-            NOW PLAYING
+            <h1>
+                NOW PLAYING
+            </h1>
 
             <ul>
                 {props.data.map( movie => (
                     <li>
                         {movie.name}
                         <img src={movie.poster_url} alt=""/>
-                        {movie.rating}
-                        {movie.begins_at}
-                        {movie.duration}
+                        {/* {movie.rating} */}
+                        {/* {movie.begins_at} */}
+                        {/* {movie.duration} */}
                     </li>
                 ))}
             </ul>

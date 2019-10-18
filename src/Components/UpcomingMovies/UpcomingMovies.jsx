@@ -1,9 +1,12 @@
 import React from 'react';
 
 export default function UpcomingMovies(props) {
+    
     return (
         <>
-            UPCOMING MOVIES
+            <h1>
+                UPCOMING MOVIES
+            </h1>
 
             <ul>
                 {props.data.map( movie => (

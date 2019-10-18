@@ -79,3 +79,36 @@ body {
     transform: translate(19px, 0);
   }
 }
+.playing-today, .upcoming-movies, .now-playing{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e7e7e799;
+
+  li{
+    list-style: none;
+    margin: 0.5rem;
+    padding: 2rem;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.upcoming-movies{
+  background-color: #c2c2c299;
+  flex-direction: column;
+  img{
+    width: 150px;
+    height: auto;
+  }
+}
+.now-playing{
+  flex-direction: column;
+  background-color: #1e1e1e99;
+  li{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

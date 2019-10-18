@@ -1,13 +1,15 @@
 import React from 'react';
 
 export default function PlayingToday(props) {
+    console.log(props);
     return (
         <>
-            PLAYING TODAY
+            <h1>PLAYING TODAY</h1>
 
             {props.data.map( movie => (
                 <li>
-                    {movie.name} : {movie.begins_at}
+                    <h4>{movie.name}</h4>
+                    <img src={movie.poster_url} alt=""/>
                 </li>
             ))}
         </>
