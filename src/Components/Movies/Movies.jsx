@@ -11,6 +11,18 @@ export default function Movies(props) {
                 onGenreSelect={ props.onGenreSelect }
             />
 
+            <ul>
+                {props.data.map( movie => (
+                    <li>
+                        {movie.name}
+                        {movie.year}
+                        {movie.rating}
+                        <img src={movie.poster_url} alt=""/>
+                    </li>
+                ))}
+            </ul>
+
+
         </>
         
     )
